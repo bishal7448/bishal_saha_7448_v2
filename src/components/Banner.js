@@ -11,8 +11,8 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
-  const period = 2000;
+  const toRotate = [ "Web3 Developer", "Blockchain Developer", "UI/UX Designer" ];
+  const period = 1500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome To My Digital Playground</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Bishal`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web3 Developer", "Blockchain Developer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Hi, I’m Bishal Saha—engineer by degree, blockchain wizard by passion, and software's toughest critic by profession. I build decentralized apps that are as secure as they are cool, and I test software like it owes me money. Whether it’s crafting smart contracts or breaking systems to make them unbreakable, I’m all about pushing technology to its limits. Think of me as the engineer who codes with precision, tests with obsession, and occasionally dreams in 1s and 0s. Let’s decentralize the world, one block at a time! 🛠️✨</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
